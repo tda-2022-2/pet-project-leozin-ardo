@@ -1,19 +1,19 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import Header from "../components/Header";
 import { ThemeContextProvider } from "../context/themeContext";
-import Home from "../pages/Home";
+import Home from "../screens/Home";
 
-const Stack = createNativeStackNavigator();
 
-type routerProps = {
-    theme: string;
-}
+const Drawer = createDrawerNavigator();
+const screenMap = [{ name: "Home", component: Home }]
+
+const screens = screenMap.map((screen, index) => <Drawer.Screen key={index} name={screen.name} component={screen.component} options={{ headerRight: () => <Header /> }} />);
 
 const Router = () =>
     <ThemeContextProvider>
-        <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Home" component={Home} />
-        </Stack.Navigator>
+        <Drawer.Navigator initialRouteName="Home">
+            {screens}
+        </Drawer.Navigator>
     </ThemeContextProvider>
 
 
