@@ -1,0 +1,4 @@
+otpauth://totp/Heroku:leonardo%20Oliveira?secret=TLOFGQS5AGE5ALG4YFZCYXYSQ2CFT7SN&issuer=Heroku
+otpauth://totp/GitHub:leonardo2000almeida?secret=SMU3KSQE6GSPMDDJ&issuer=GitHub
+otpauth://totp/Amazon%20Web%20Services:root-account-mfa-device%40211217511265?secret=SGLWQQ56VO3SHSMDE32URQ7FAPP3XPNYUTV56BYHDM27AGJKI36E5L5L4W43VIER&issuer=Amazon%20Web%20Services
+otpauth://totp/Facebook:Leonardolmeida?secret=J6WDQQIRIFZZTD5AZFCNUJNPQ2S2HFES&issuer=Facebook
